@@ -352,7 +352,7 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date(2022, 21, 05, 19, 00, 00).getTime());
+    var d = new Date(new Date().getTime()+ 200 * 120 * 120 * 2000);
 
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
@@ -362,10 +362,10 @@
 
     //jQuery example
     $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
+        year: 2022,
+    month: 5,
+    day: 21,
+    enableUtc: true
     });
 
 
